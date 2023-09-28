@@ -1,11 +1,11 @@
 {
-    "name": "Selvania-Launcher",
-    "preductname": "Selvania Launcher",
+    "name": "spectercraft",
+    "preductname": "SCPLauncher",
     "version": "1.3.3",
-    "description": "Launcher Mincraft custom (crack, premium)",
+    "description": "Minecraft Sunucu Başlatıcı",
     "main": "src/app.js",
-    "author": "Luuxis",
-    "url": "http://launcher.luuxis.fr/launcherSelvania",
+    "author": "hadas",
+    "url": "http://45.131.3.100/",
     "engines": {
         "node": "^18.x.x"
     },
@@ -34,6 +34,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/luuxis/Selvania-Launcher.git"
+        "url": "git+https://github.com/hadasfada/SpecterCraft-Launcher.git"
     }
 }

@@ -1,29 +1,27 @@
 <div class="settings-content">
     <div class="tabs-settings-btn">
-        <button class="tab-btn-css tab-btn active-tab-btn default-tab-btn">Comptes</button>
+        <button class="tab-btn-css tab-btn active-tab-btn default-tab-btn">Kullanıcılar</button>
         <button class="tab-btn-css tab-btn">Java</button>
         <button class="tab-btn-css tab-btn">Launcher</button>
-        <button class="tab-btn-css save-tabs-btn">Sauvegarder</button>
+        <button class="tab-btn-css save-tabs-btn">Geri Git</button>
     </div>
 
     <div class="tabs-settings-content active-tab-content">
         <div class="center-align">
-            <button class="add-account">Ajouter un compte</button>
+            <button class="add-account">Hesap Ekle</button>
             <div class="accounts"></div>
         </div>
     </div>
 
     <div class="tabs-settings-content">
         <div class="settings-content-scroll">
-            <div class="title-settings">Paramètre de votre RAM.</div>
+            <div class="title-settings">Ram Ayarları.</div>
             <div class="java-settings">
                 <div class="information">
-                    Définition de la RAM alloué à votre jeu, une quantité plus important augmenteras les performances de votre jeu.<br> A noter qu'il faut éviter de mettre une trop grande quantité sinon cela peut provoquer des pertes de performances survos
-                    autres applications.
+                    RAM ayarlarınız, bilgisayarınızda olan boşta RAM miktarına göre yapılmalıdır. Aksi takdirde bilgisayarınız donabilir ve yeniden başlatmak zorunda kalabilirsiniz, bu da veri kaybı demek :(.
                     <br><br>
-                    <b>- RAM Maximale :</b> Indique la quantité totale de RAM allouée à votre jeu. Il est recommandé de ne pas dépasser 50% de la quantité totale de RAM présente sur votre PC afin qu'il puisse fonctionner correctement. Si votre ordinateur
-                    a plus de 8Go de RAM, nous vous recommandons d'allouer 3Go. Si votre ordinateur a 4Go ou moins, n'allouez pas plus de 2Go.<br><br>
-                    <b>- RAM Minimale :</b> Indique la quantité minimale de RAM allouée au démarrage de votre jeu. Il est recommandé de ne pas mettre plus de 3Go pour cette valeur. La valeur typique est de 1Go.
+                    <b>- Maksimum RAM :</b> Eğer ani donma gibi sorunlar yaşıyorsanız bu değeri azıcık yükseltin. Fakat bilgisayarınızın RAM kullanıma da dikkat edin :> .<br><br>
+                    <b>- Minimum RAM :</b> Bu değeri değiştirmenizi pek tavsiye etmem ama isterseniz 0.5 gibi değerlere ayarlayabilirsiniz.
                 </div>
                 <div class="ram-info">
                     <div class="memory-slider" min="0.5" max="8" step="0.5">
@@ -39,8 +37,8 @@
                     </div>
 
                     <div class="ram-info-block">
-                        <b>Vous possédez un total de <span id="total-ram">0 Go</span> RAM.</b><br>
-                        <b>Vous possédez un total de <span id="free-ram">0 Go</span> RAM disponible.</b>
+                        <b>RAM Miktarınız <span id="total-ram">0 GB</span> RAM.</b><br>
+                        <b>Boşta <span id="free-ram">0 Go</span> GB RAM mevcut.</b>
                     </div>
                 </div>
             </div>
@@ -49,12 +47,12 @@
 
     <div class="tabs-settings-content">
         <div class="center-page">
-            <div class="title-settings">Paramètre après le lancement du jeu.</div>
+            <div class="title-settings">Launcher sonrası ayarlar.</div>
             <div class="java-settings">
                 <div class="information">
-                    <input type="checkbox" class="checkbox-settings" id="launcher-close"><label for="launcher-close"><div class="checkround"></div></label> Fermer le launcher après le lancement du jeu.</br>
-                    <input type="checkbox" class="checkbox-settings" id="launcher-close-all"><label for="launcher-close-all"><div class="checkround"></div></label> Fermer le jeu si le launcher est fermé.</br>
-                    <input type="checkbox" class="checkbox-settings" id="launcher-open"><label for="launcher-open"><div class="checkround"></div></label> Garder le launcher ouvert après le lancement du jeu.
+                    <input type="checkbox" class="checkbox-settings" id="launcher-close"><label for="launcher-close"><div class="checkround"></div></label> Oyunu başlattıktan sonra launcher'ı kapat (tavsiye edilir).</br>
+                    <input type="checkbox" class="checkbox-settings" id="launcher-close-all"><label for="launcher-close-all"><div class="checkround"></div></label> Launcher kapanınca oyunu da kapat.</br>
+                    <input type="checkbox" class="checkbox-settings" id="launcher-open"><label for="launcher-open"><div class="checkround"></div></label> Oyunu başlattıktan sonra launcher'ı açık tut.
                 </div>
             </div>
         </div>

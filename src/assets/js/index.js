@@ -90,7 +90,7 @@ class Splash {
     }
 
     shutdown(text) {
-        this.setStatus(`${text}<br>5 saniyeye kapanıyor`);
+        this.setStatus(`${text}<br>5 Saniyeye Kapanıyor!`);
         let i = 4;
         setInterval(() => {
             this.setStatus(`${text}<br>Kapanıyor ${i--}s`);

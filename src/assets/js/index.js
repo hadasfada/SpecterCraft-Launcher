@@ -24,7 +24,12 @@ class Splash {
         let splashes = [
             { "message": "aynen bundan", "author": "hadas" },
             { "message": "mistik olsun.", "author": "hadas" },
-            { "message": "tuhaf bir yazi ekle", "author": "hadas" }
+            { "message": "tuhaf bir yazi ekle", "author": "hadas" },
+            { "message": "kafam acıyor", "author": "hadas" },
+            { "message": "işlem çok acısız", "author": "hadas" },
+            { "message": "don't you?", "author": "hadas" },
+            { "message": "bip bop bop bip", "author": "hadas" },
+            { "message": "şair ne demek istiyor", "author": "hadas" }
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
@@ -44,17 +49,17 @@ class Splash {
 
     async checkUpdate() {
         if (dev) return this.startLauncher();
-        this.setStatus(`recherche de mise à jour...`);
+        this.setStatus(`Güncelleme aranıyor...`);
 
         ipcRenderer.invoke('update-app').then(err => {
             if (err.error) {
                 let error = err.message;
-                this.shutdown(`erreur lors de la recherche de mise à jour :<br>${error}`);
+                this.shutdown(`bir hatacık var :<br>${error}`);
             }
         })
 
         ipcRenderer.on('updateAvailable', () => {
-            this.setStatus(`Mise à jour disponible !`);
+            this.setStatus(`Güncelleme var!!!`);
             this.toggleProgress();
             ipcRenderer.send('start-update');
         })
@@ -74,21 +79,21 @@ class Splash {
             this.startLauncher();
         }).catch(e => {
             console.error(e);
-            return this.shutdown("Aucune connexion internet détectée,<br>veuillez réessayer ultérieurement.");
+            return this.shutdown("İnternet bağlantın yok :(,<br>lütfen daha sonra dene!!");
         })
     }
 
     startLauncher() {
-        this.setStatus(`Démarrage du launcher`);
+        this.setStatus(`Başlatılıyor`);
         ipcRenderer.send('main-window-open');
         ipcRenderer.send('update-window-close');
     }
 
     shutdown(text) {
-        this.setStatus(`${text}<br>Arrêt dans 5s`);
+        this.setStatus(`${text}<br>5 saniyeye kapanıyor`);
         let i = 4;
         setInterval(() => {
-            this.setStatus(`${text}<br>Arrêt dans ${i--}s`);
+            this.setStatus(`${text}<br>Kapanıyor ${i--}s`);
             if (i < 0) ipcRenderer.send('update-window-close');
         }, 1000);
     }

@@ -113,7 +113,7 @@ class Settings {
         });
 
         document.querySelector(".path-button-reset").addEventListener("click", () => {
-            path.value = 'Utiliser la version de java livre avec le launcher';
+            path.value = 'Başlatıcıyla Java kitabı sürümünü kullanın';
             file.value = '';
             this.database.update({ uuid: "1234", path: false }, 'java-path');
         });

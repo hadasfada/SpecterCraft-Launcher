@@ -1,11 +1,11 @@
 {
     "name": "spectercraft",
-    "preductname": "SCPLauncher",
-    "version": "1.0.0",
+    "preductname": "SPCLauncher",
+    "version": "1.0.1",
     "description": "Minecraft Sunucu Başlatıcı",
     "main": "src/app.js",
     "author": "hadas",
-    "url": "http://45.131.3.100/",
+    "url": "http://45.131.3.100",
     "engines": {
         "node": "^18.x.x"
     },

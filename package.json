@@ -5,14 +5,14 @@
     "description": "Minecraft Sunucu Başlatıcı",
     "main": "src/app.js",
     "author": "hadas",
-    "url": "http://45.131.3.100",
+    "url": "http://server.spectercraft.net",
     "engines": {
         "node": "^18.x.x"
     },
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "build": "node build.js --build",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/luuxis/Selvania-Launcher/master/src/assets/images/icon.png",
+        "icon": "node build.js",
         "dev": "nodemon --exec npm start"
     },
     "license": "CC0",

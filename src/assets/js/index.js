@@ -23,13 +23,15 @@ class Splash {
     async startAnimation() {
         let splashes = [
             { "message": "aynen bundan", "author": "hadas" },
+            { "message": "bol şanş", "author": "hadas" },
+            { "message": "hala betada", "author": "hadas" },
+            { "message": "hep betada", "author": "hadas" },
+            { "message": "şunu da eklesene", "author": "hadas" },
             { "message": "mistik olsun.", "author": "hadas" },
             { "message": "tuhaf bir yazi ekle", "author": "hadas" },
             { "message": "kafam acıyor", "author": "hadas" },
             { "message": "işlem çok acısız", "author": "hadas" },
-            { "message": "don't you?", "author": "hadas" },
             { "message": "bip bop bop bip", "author": "hadas" },
-            { "message": "şair ne demek istiyor", "author": "hadas" }
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;

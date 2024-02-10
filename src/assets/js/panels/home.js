@@ -79,7 +79,7 @@ class Home {
                 </div>
                 <div class="news-content">
                     <div class="bbWrapper">
-                        <p>Sunucuya bağlantı başarısız</br>Yapılandırmanızı kontrol edin.</p>
+                        <p>Sunucuya bağlantı başarısız.</br>Yapılandırmanızı kontrol edin.</p>
                     </div>
                 </div>`
             // news.appendChild(blockNews);

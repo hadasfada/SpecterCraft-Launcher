@@ -25,7 +25,7 @@ class Home {
         this.initStatusServer();
         this.initBtn();
     }
-
+    
     async initNews() {
         let news = document.querySelector('.news-list');
         if (this.news) {
@@ -122,7 +122,8 @@ class Home {
                     build: this.config.loader.build,
                     enable: this.config.loader.enable,
                 },
-
+                JVM_ARGS: ["-Duser.language=en"],
+                GAME_ARGS: ["-Duser.language=en"],
                 verify: this.config.verify,
                 ignored: ['loader', ...this.config.ignored],
 

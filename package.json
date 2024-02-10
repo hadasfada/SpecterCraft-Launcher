@@ -1,7 +1,7 @@
 {
     "name": "spectercraft",
     "preductname": "SPCLauncher",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Minecraft Sunucu Başlatıcı",
     "main": "src/app.js",
     "author": "hadas",

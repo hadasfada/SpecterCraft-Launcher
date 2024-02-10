@@ -133,6 +133,7 @@ class Settings {
                     for(let arg of argsInput) {
                         if (arg === '') continue;
                         if (arg === '--server' || arg === '--port') continue;
+                        args.push('-Duser.language=en', arg);
                         args.push(arg);
                     }
                 }

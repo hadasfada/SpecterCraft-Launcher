@@ -171,7 +171,7 @@ class Home {
 
             launch.on('patch', patch => {
                 console.log(patch);
-                info.innerHTML = `Patch en cours...`
+                info.innerHTML = `Yamalanıyor...`
             });
 
             launch.on('data', (e) => {
